@@ -56,6 +56,7 @@
 
 ## 项目结构 (后端)
 
+```tree
 backend/
 ├── app/                  # FastAPI 应用核心代码
 │   ├── core/             # 配置 (config.py)
@@ -64,12 +65,12 @@ backend/
 │   ├── models/           # SQLAlchemy ORM 模型
 │   ├── routers/          # API 路由定义
 │   ├── schemas/          # Pydantic 数据模型 (请求/响应体)
-│   ├── init.py
+│   ├── __init__.py
 │   └── main.py           # FastAPI 应用入口
 ├── .env.example          # 环境变量示例文件
 ├── requirements.txt      # Python 依赖
-└── uvicorn_runner.py     # (如果使用) 或直接通过 uvicorn 命令运行
-
+└── uvicorn_runner.py     # (可选) 或直接通过 uvicorn 命令运行
+```
 ## 安装与运行
 
 ### 后端
